@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+
+  justify-content: center;
+  display: flex;
+}
+
+.maindiv::before {
+  content: "";
+
+  /* background-image: url("clouds1.jpg"); */
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  top: 0;
+  z-index: -1;
+}
+
+.maindiv {
+  /* background-image: url('./img/clear.jpg'); */
+
+  padding: 2em;
+  border: none;
+  margin-top: 1rem;
+
+  width: 26rem;
+  height: auto;
+
+  /* background-color: #19C3FB; */
+  display: flex;
+
+  /* box-shadow: 0 0 10rem rgb(8, 8, 8); */
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+
+  position: relative;
+}
+.time {
+  margin-top: -5%;
+
+  position: absolute;
+}
+
+input[type="search"] {
+  padding-left: 2em;
+  border-radius: 15px;
+  width: auto;
+  height: 2em;
+  box-shadow: 18px 18px 29px black;
+  border: none;
+  font-size: 20px;
+
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(203, 212, 193);
+  color: rgb(10, 10, 10);
+}
+
+.inputdiv {
+  padding: 1em;
+  margin-top: 3%;
+
+  align-self: flex-start;
+  width: auto;
+
+  position: absolute;
+}
+.location {
+  padding: 3rem;
+
+  align-items: center;
+  text-transform: capitalize;
+
+  position: relative;
+  margin-top: 5rem;
+}
+
+.city {
+  margin-bottom: 30em;
+  padding: 5rem;
+  color: black;
+}
+
+.temp {
+  padding: 2rem;
+
+  margin-top: -5rem;
+  width: auto;
+  font-size: larger;
+  font-weight:bold
+}
+#tmp {
+  font-size: 3rem;
+  color: rgb(202, 73, 73);
+}
+
+.icon {
+  width: auto;
+  height: auto;
+  background-color: rgb(0, 255, 115);
+  border-radius: 12px;
+  
+  
+  /* './components/images/clear.jpg'; */
+}
+.humidity {
+  margin-top: -4rem;
+color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 26rem;
+  text-align: center;
+}
+p {
+  color: blue;
+}
+
+#windy {
+  padding: 1rem;
+
+  text-align: center;
+  font-size: larger;
+  margin-top: 0;
+  color: blue;
+  max-width: max-content;
+}
+
+.search {
+  margin-left: 9rem;
+  position: absolute;
+}
+.weather {
+  width: auto;
+  margin-top: 1rem;
+
+  margin-left: 1em;
+  height: fit-content;
+}
+@media only screen and (max-width: 730px) {
+  .maindiv {
+    overflow-x: hidden;
+    overflow-wrap: hidden;
+    /* background-image:  url("clouds1.jpg"); */
+
+    height: 100%;
+    margin-left: 4rem;
+  
+   
+  }
+ 
+ 
+
+  p {
+    font-size: 3vh;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
